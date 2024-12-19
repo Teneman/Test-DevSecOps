@@ -1,36 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prod Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .content {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-            font-size: 36px;
-        }
-    </style>
+    <title>Test SQL Injection</title>
 </head>
 <body>
-    <div class="content">
-	<h1>Ceci est le test de Jenkins</h1>
-    </div>
+    <h1>Bienvenue sur test-gema.local</h1>
+    <form method="post" action="/search">
+        <label for="search">Rechercher :</label>
+        <input type="text" id="search" name="search">
+        <button type="submit">Envoyer</button>
+    </form>
+    <!-- formulaire vulnérable-->
 </body>
 </html>
